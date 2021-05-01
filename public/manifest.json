@@ -1,0 +1,7 @@
+{
+  "short_name": "Note 360",
+  "start_url": "./signup",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

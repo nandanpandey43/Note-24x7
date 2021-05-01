@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Spectral:800&display=swap");
+
+.navContainer {
+  font-family: "Spectral", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+#logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+#logoContainer h1 {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.navContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navContainer ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.navContainer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.4s linear;
+}
+
+.navContainer ul li a:hover {
+  color: #00c170;
+}
+
+.active {
+  color: #00c170 !important;
+}
+
+#landing-container {
+  display: flex;
+}
+
+.main {
+  height: 100vh;
+  flex: 70%;
+}
+
+.secondary {
+  height: 100vh;
+  display: inline-block;
+  flex: 30%;
+  overflow: scroll;
+}
+
+.secondary-text-container {
+  padding: 15px;
+}
+
+#green-subtitle {
+  color: rgba(0, 193, 112, 1);
+}
+
+#green-underline {
+  text-decoration: underline rgba(0, 193, 112, 1);
+}
+
+#secondary-bold-paragraph {
+  font-weight: bold;
+  text-align: justify;
+}
+
+.secondary-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.secondary-info p {
+  margin: 0px;
+}
+
+.secondary-info-title {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.secondary-info-value {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.secondary-noMargin {
+  padding-top: 40px;
+  margin-bottom: 70px;
+}
+
+.secondary-noMargin p {
+  margin: 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.button-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 29%;
+  background: #ffffff;
+  height: 50px;
+  bottom: 0;
+  right: 1%;
+}
+
+.button-container p {
+  padding-left: 15px;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.button-container p a {
+  color: rgba(0, 193, 112, 1);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button-container button {
+  background: rgba(0, 193, 112, 1);
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 5px;
+  border: none;
+  margin-left: 15px;
+  width: 80px;
+}
+
+.button-container button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300&display=swap");
+
+#footerContainer {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.benefitsContainer {
+  color: #ffffff;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefitsContainer li {
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: rgba(255, 255, 255, 0.3) 0.5px solid;
+  text-align: center;
+  perspective: 1000px;
+  transition: all 0.6s ease-in-out;
+}
+
+.benefitsContainer li:last-child {
+  border-right: none;
+}
+
+.benefitsContainer li:hover {
+  background: #ffffff;
+  box-shadow: 0 0 30px 0px rgba(255, 255, 255, 0.5);
+}
+
+.benefitsContainer li:first-child:hover:after {
+  content: "Reduces Stress! A good-for-you habit to lessen impact of physical stressors.";
+  position: absolute;
+  z-index: 2;
+  color: #000000;
+}
+
+.benefitsContainer li:nth-of-type(2):hover:after {
+  content: "Keeps Memory Sharp! Boost comprehension + increase working memory capacity.";
+  position: absolute;
+  z-index: 2;
+  color: #000000;
+}
+
+.benefitsContainer li:nth-of-type(3):hover:after {
+  content: "Boosts Mood! Improve your mood + greater sense of emotional well-being.";
+  position: absolute;
+  z-index: 2;
+  color: #000000;
+}
+
+.benefitsContainer li:last-child:hover:after {
+  content: "Strengthens Emotional Functions! Helps the brain regulate emotions.";
+  position: absolute;
+  z-index: 2;
+  color: #000000;
+}
+
+.iconContainer {
+  padding: 0 10%;
+  display: grid;
+  gap: 10px;
+  width: max-content;
+  height: max-content;
+}
+
+.iconContainer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s linear;
+  border-radius: 20px;
+}
+
+.iconContainer div span {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ffffff;
+  width: 60px;
+  opacity: 0;
+  transition: all 0.4s linear;
+  text-transform: uppercase;
+  transform: translateX(50%);
+  text-align: center;
+}
+
+.iconContainer div:hover span {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.iconContainer div:hover {
+  background: rgba(0, 193, 112, 1);
+}
+
+@media (max-width: 900px) {
+  .navContainer {
+    flex-direction: column;
+  }
+
+  #logoContainer h1 {
+    font-size: 18px;
+  }
+
+  .main {
+    flex: 60%;
+  }
+
+  .secondary {
+    flex: 40%;
+  }
+
+  .button-container {
+    width: 39%;
+  }
+
+  #footerContainer {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  #landing-container {
+    display: block;
+  }
+
+  .main {
+    height: min-content;
+  }
+
+  .iconContainer {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .iconContainer div {
+    justify-content: center;
+    background: rgba(0, 193, 112, 1);
+    margin: 5px;
+  }
+
+  .iconContainer div span {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  #footerContainer {
+    position: static;
+    width: 100%;
+    height: min-content;
+    margin-top: 70px;
+  }
+
+  .benefitsContainer li:first-child:hover:after {
+    content: "Reduces Stress!";
+  }
+
+  .benefitsContainer li:nth-of-type(2):hover:after {
+    content: "Keeps Memory Sharp!";
+  }
+
+  .benefitsContainer li:nth-of-type(3):hover:after {
+    content: "Boosts Mood!";
+  }
+
+  .benefitsContainer li:last-child:hover:after {
+    content: "Strengthens Emotional Functions!";
+  }
+
+  .secondary {
+    overflow: visible;
+  }
+
+  .button-container {
+    width: 100%;
+    right: 0;
+  }
+}
