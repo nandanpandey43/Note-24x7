@@ -31,7 +31,7 @@ class Plans extends React.Component {
       //   </div>
       // </div>
       <div className="secondary-text-container">
-      <h1>
+      <h1 style={{textAlign: "center"}}>
         Coming soon
       </h1>
       </div>

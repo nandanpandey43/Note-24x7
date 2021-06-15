@@ -39,7 +39,7 @@ class SignUp extends React.Component {
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
-          <Link className={classes.link} to="/landing">
+          <Link className={classes.link} to="/">
             <div className={classes.logoContainer}>
               <Logo></Logo>
               <h1 className={classes.title}>NOTES 24x7</h1>
